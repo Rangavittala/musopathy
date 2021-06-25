@@ -26,25 +26,39 @@ class _LanguageState extends State<Language> {
     return Scaffold(
         key: key2,
         drawer: CustomDrawer(),
-        appBar: AppBar(
-          leading: IconButton(
-              icon: Icon(Icons.menu),
-              iconSize: 30.0,
-              color: Theme.of(context).primaryColor,
-              onPressed: () => key2.currentState.openDrawer()),
-          iconTheme: IconThemeData(color: Color.fromRGBO(40, 115, 161, 1.0)),
-          backgroundColor: Colors.white,
-          centerTitle: true,
-          title: Text(
-            'M U S O P A T H Y',
-            style: TextStyle(
-              fontFamily: 'Ubuntu',
-              fontSize: 20,
-              color: Color.fromRGBO(40, 115, 161, 1.0),
-              fontWeight: FontWeight.normal,
-            ),
+      appBar: AppBar(
+        iconTheme: IconThemeData(color: Color.fromRGBO(40, 115, 161, 1.0)),
+        backgroundColor: Colors.white,
+        title: Text(
+          'M U S O P A T H Y',
+          style: TextStyle(
+            fontFamily: 'Ubuntu',
+            fontSize: 20,
+            color: Color.fromRGBO(40, 115, 161, 1.0),
+            fontWeight: FontWeight.normal,
           ),
         ),
+        elevation: 4,
+      ),
+//         appBar: AppBar(
+//           leading: IconButton(
+//               icon: Icon(Icons.menu),
+//               iconSize: 30.0,
+//               color: Theme.of(context).primaryColor,
+//               onPressed: () => key2.currentState.openDrawer()),
+//           iconTheme: IconThemeData(color: Color.fromRGBO(40, 115, 161, 1.0)),
+//           backgroundColor: Colors.white,
+//           centerTitle: true,
+//           title: Text(
+//             'M U S O P A T H Y',
+//             style: TextStyle(
+//               fontFamily: 'Ubuntu',
+//               fontSize: 20,
+//               color: Color.fromRGBO(40, 115, 161, 1.0),
+//               fontWeight: FontWeight.normal,
+//             ),
+//           ),
+//         ),
         body: SafeArea(
             child: SingleChildScrollView(
                 child: Container(
